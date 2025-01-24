@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #7808d0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .title h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .title p {
+    font-size: 1.2rem;
+  }
+  
+  section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h2, h3 {
+    color: #7808d0;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  .comment-section {
+    background-color: #e7e7e7;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  
+  /* Share Button Styles */
+  .button {
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: var(--clr);
+    color: #fff;
+    border-radius: 10rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    padding-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color 0.3s;
+  }
+  
+  .button__icon-wrapper {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    color: var(--clr);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  
+  .button:hover {
+    background-color: #000;
+  }
+  
+  .button:hover .button__icon-wrapper {
+    color: #000;
+  }
+  
+  .button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+  }
+  
+  .button:hover .button__icon-svg:first-child {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(150%, -150%);
+  }
+  
+  .button:hover .button__icon-svg--copy {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform: translate(0);
+  }
+  
+  /* Submit Button Styles */
+  .primary-button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.8rem 2rem;
+    background-color: #7808d0;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .primary-button:hover {
+    background-color: white;
+    color: #7808d0;
+    border-color: #7808d0;
+  }
+  /* Read More Button Styles (Similar to Submit Button) */
+  .readmore-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7808d0;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .readmore-button:hover {
+    background-color: #000;
+    transform: scale(1.05);
+  }
+  /* Watch Video Button Styles */
+.watch-video-button {
+    text-decoration: none;
+    color: white;
+    background-color: #7808d0;  /* Matching color */
+    padding: 0.8rem 2rem;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;  /* Add some space between the icon and text */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Add a shadow to make it pop */
+}
+
+.watch-video-button:hover {
+    background-color: white;
+    color: #7808d0;
+    border-color: #7808d0;
+    transform: scale(1.1);  /* Slightly enlarge the button */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);  /* Increase shadow on hover */
+}
+
+.watch-video-button svg {
+    transition: transform 0.3s ease;
+}
+
+.watch-video-button:hover svg {
+    transform: rotate(360deg);  /* Rotate the icon on hover for added animation */
+}
+/* Notification Icon Styles */
+.notification-icon {
+    cursor: pointer;
+    margin-left: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7808d0;
+    padding: 0.8rem;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .notification-icon svg {
+    fill: white;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .notification-icon:hover {
+    transform: scale(1.1);  /* Make it slightly larger on hover */
+    background-color: #9b33e1;  /* Change background color on hover */
+  }
+  
+  .notification-icon:hover svg {
+    transform: rotate(360deg);  /* Rotate the icon */
+  }
+  
